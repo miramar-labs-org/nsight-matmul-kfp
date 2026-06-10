@@ -48,6 +48,9 @@ outputs/
 .env.*
 secrets/
 
+# Nsight generated artifacts (derived from .nsys-rep)
+*.sqlite
+
 # OS
 .DS_Store
 Thumbs.db
