@@ -31,7 +31,7 @@ notebook.ipynb       ← Development notebook
 scripts/
   deploy_pipeline.py    ← Called by Deploy to KFP workflow; --profile flag for nsys
   terminate_pipeline.py ← Called by Undeploy from KFP workflow
-  purge_kfp.py          ← Purge all runs + pipeline versions before redeploy
+  purge_kfp_mlflow.py          ← Purge all runs + pipeline versions before redeploy
   purge_nsight.py       ← Clean up large nsys artifacts from ~/shared/nsight/
 ```
 
@@ -42,7 +42,7 @@ scripts/
 Profile any run with a single flag:
 
 ```bash
-python3 scripts/purge_kfp.py
+python3 scripts/purge_kfp_mlflow.py
 python3 scripts/deploy_pipeline.py --run-name run-001 --profile
 ```
 

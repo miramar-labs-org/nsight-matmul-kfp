@@ -40,7 +40,7 @@
 ### Infrastructure (inherited from platform template)
 - KFP v2 pipeline with GPU component using NGC PyTorch base image
 - Nsight Operator pod-label profiling: `kubernetes.add_pod_label(task, "nvidia-nsight-profile", "enabled")`
-- `purge_kfp.py`, `purge_nsight.py`
+- `purge_kfp_mlflow.py`, `purge_nsight.py`
 - `deploy_pipeline.py` with `--run-name`
 
 ### Project-specific

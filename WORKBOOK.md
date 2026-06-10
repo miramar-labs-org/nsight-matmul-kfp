@@ -98,11 +98,11 @@ python3 -c "from kfp import compiler; from pipeline import pipeline; \
 
 ```bash
 # Normal run
-python3 scripts/purge_kfp.py
+python3 scripts/purge_kfp_mlflow.py
 python3 scripts/deploy_pipeline.py --run-name run-001
 
 # With nsys GPU profiling
-python3 scripts/purge_kfp.py
+python3 scripts/purge_kfp_mlflow.py
 python3 scripts/deploy_pipeline.py --run-name run-001 --profile
 ```
 
